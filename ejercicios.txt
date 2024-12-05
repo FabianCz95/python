@@ -1,0 +1,77 @@
+1. Simulador de Cajero Automático
+Requisitos:
+Operaciones básicas:
+Consultar saldo: Muestra el saldo actual.
+Depositar: Permite agregar una cantidad al saldo.
+Retirar: Permite retirar dinero del saldo, validando que no se exceda el saldo disponible.
+Validaciones:
+Evita retirar cantidades mayores al saldo.
+Maneja errores como entradas no numéricas o negativas.
+Extras opcionales:
+Registra el historial de transacciones (depositos, retiros, consultas).
+Salida ordenada del programa con confirmación.
+Estructura sugerida:
+
+Variables: saldo para almacenar el saldo actual.
+Funciones: consultar_saldo, depositar, retirar, menu_principal.
+
+2. Agenda de Contactos
+Requisitos:
+
+Gestión de contactos:
+Crear un contacto con nombre, teléfono y correo.
+Editar contactos existentes (buscar por nombre y actualizar datos).
+Eliminar contactos por nombre.
+Buscar contactos:
+Permite buscar por nombre y muestra los detalles del contacto.
+Persistencia:
+Guarda y carga los contactos desde un archivo (por ejemplo, en formato JSON o CSV).
+Extras opcionales:
+Ordenar contactos al mostrarlos (por nombre).
+Validar formatos (por ejemplo, correos electrónicos o números de teléfono).
+Estructura sugerida:
+
+Diccionario contactos para almacenar los datos (clave: nombre, valor: datos del contacto).
+Funciones: crear_contacto, editar_contacto, eliminar_contacto, buscar_contacto, guardar_contactos, cargar_contactos.
+3. Simulador de Venta de Boletos
+Requisitos:
+
+Gestión de boletos:
+Define las secciones del evento (por ejemplo, "VIP", "General") con precios y cantidad de boletos disponibles.
+Permite seleccionar una sección y cantidad de boletos a comprar.
+Reduce el stock de boletos después de la compra.
+Resumen de compra:
+Calcula el total a pagar por los boletos seleccionados.
+Muestra un desglose de la compra al confirmar.
+Extras opcionales:
+Implementa un sistema de descuentos para ciertas secciones o cantidades.
+Genera un recibo o comprobante al finalizar la compra.
+Estructura sugerida:
+
+Diccionario secciones con detalles (clave: nombre de la sección, valor: precio y stock).
+Funciones: mostrar_secciones, seleccionar_boletos, finalizar_compra.
+4. Generador de Contraseñas Seguras
+Requisitos:
+
+Configuración personalizada:
+Solicita la longitud de la contraseña.
+Permite elegir entre incluir mayúsculas, minúsculas, números y caracteres especiales.
+Generación de contraseñas:
+Usa la biblioteca estándar random para generar contraseñas aleatorias.
+Extras opcionales:
+Permite generar múltiples contraseñas en una sola ejecución.
+Muestra estadísticas de seguridad de la contraseña (como fuerza relativa según su longitud y diversidad de caracteres).
+Estructura sugerida:
+
+Variables de caracteres: mayusculas, minusculas, numeros, especiales.
+Función principal: generar_contraseña(longitud, incluir_mayusculas, incluir_numeros, incluir_especiales).
+5. Sistema de Registro de Clases
+Requisitos:
+
+Gestión de estudiantes y clases:
+Registrar estudiantes con su nombre.
+Asignar clases a los estudiantes (por ejemplo, "Matemáticas", "Historia").
+Validación de horarios:
+Evita que un estudiante tenga dos clases en el mismo horario.
+Extras opcionales:
+Muestra el horario completo de cada estudiante
